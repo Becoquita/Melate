@@ -1,5 +1,76 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="container">
 
-{{outlet}}
+	<h2 class="center-align">Melate</h2>	
+
+		<div class="center-align">
+        <p style="color:MidnightBlue"></p>
+        <hr>
+
+    </div>
+
+	<div class="row">
+		<div class="col s8 offset-s2">
+			{{input placeholder="First ticket" type="number" value=B1}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s8 offset-s2">
+			{{input placeholder="Last ticket" type="number" value=B2}}
+		</div>
+	</div>
+
+	<!--==========================
+	=            Btns            =
+	===========================-->
+	
+	<div class="row">
+		<div class="col s8 offset-s2">
+			<div class="col s6 center-align">
+				<div class="btn" {{action 'createKeys'}}>
+					Calculate
+				</div>
+			</div>
+			<div class="col s6 center-align">
+				<div class="btn" {{action 'clear'}}>
+					Clear
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!--==========================
+	=            Table            =
+	===========================-->
+  
+      {{!-- <table>
+      	<div class="center-align">
+        <thead>
+          <tr>
+              <th>Sold Tickets</th>
+              <th>Expected Earnings</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+          </tr>
+        </tbody>
+        </div>
+      </table> --}}
+
+
+		  <div class="row">
+		<div class="col s8 offset-s2">
+			<label >Sold tickets | Expected Earnings</label>
+			<input disabled type="text" value={{n}} class="validate"  >
+		</div>
+	</div>
+
+</div>
