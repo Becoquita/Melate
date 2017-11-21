@@ -28,6 +28,9 @@ export default Controller.extend({
 			if (b1 === ''){
 				alert('The first ticket cannot be empty');
 				return;
+			} else if (b2>b1){
+				alert('The last ticket cannot be mayor than first ticket');
+				return;
 			} else {
 			if (b2 != undefined ){
 				
